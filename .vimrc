@@ -78,7 +78,6 @@ autocmd BufWritePre * %s/\s\+$//e
 
 " --- Remap config ---
 
-inoremap jj <Esc>
 inoremap <Esc> <Nop>
 
 " Remove arrow keys from all modes
