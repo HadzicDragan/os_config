@@ -105,8 +105,18 @@ source $ZSH/oh-my-zsh.sh
 #
 programs_dir="${HOME}/programs"
 JAVA_HOME="${programs_dir}/jdk-14"
+MAVEN_HOME="${programs_dir}/apache-maven"
 
 export PATH=$JAVA_HOME/bin:$PATH
+export PATH=$MAVEN_HOME/bin:$PATH
+
+INTELLIJ_IDEA_HOME="${programs_dir}/idea-intellij-2020"
+
+# alias
+alias intellij_idea='${INTELLIJ_IDEA_HOME}/bin/idea.sh'
+
+
+
 
 
 
