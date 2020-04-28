@@ -158,9 +158,9 @@ bindsym $mod+r mode "resize"
 
 # Alsa audio settings
 # bindcode PageUp = 112
-bindcode $mod+112 exec amixer -q set Master 5dB+ unmute
+bindcode $mod+112 exec amixer -q set Master 2dB+ unmute
 # bindcode PageDown = 117
-bindcode $mod+117 exec amixer -q set Master 5dB- unmute
+bindcode $mod+117 exec amixer -q set Master 2dB- unmute
 # bindcode End = 115
 bindcode $mod+115 exec amixer -q set Master toggle
 
