@@ -104,16 +104,28 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 programs_dir="${HOME}/programs"
-JAVA_HOME="${programs_dir}/jdk-14"
+JAVA_HOME="${programs_dir}/jdk-16"
+GRAALVM_HOME="${programs_dir}/graalvm-java11"
 MAVEN_HOME="${programs_dir}/apache-maven"
+NODE_HOME="${programs_dir}/node-v12-js"
+VS_CODE_HOME="${programs_dir}/vs-code"
 
+#export PATH=$MAVEN_HOME/bin:$PATH
+export PATH=$NODE_HOME/bin:$PATH
+
+# enable if glaavlm is not used
 export PATH=$JAVA_HOME/bin:$PATH
-export PATH=$MAVEN_HOME/bin:$PATH
+#export PATH=$GRAALVM_HOME/bin:$PATH
 
-INTELLIJ_IDEA_HOME="${programs_dir}/idea-intellij-2020"
+INTELLIJ_IDEA_HOME="${programs_dir}/idea-community-2021"
+ANDROID_HOME="${programs_dir}/android-studio"
+DISCORD_HOME="${programs_dir}/discord"
 
 # alias
 alias intellij_idea='${INTELLIJ_IDEA_HOME}/bin/idea.sh'
+alias vs_code='${VS_CODE_HOME}/bin/code'
+alias android_studio='${ANDROID_HOME}/bin/studio.sh'
+alias discord='sudo ${DISCORD_HOME}/Discord --no-sandbox'
 
 
 
